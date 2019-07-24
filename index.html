@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>F.I.N.D. | Fake Information & News Detector</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            body{
+                background-color: #fdf5e8;
+                font-family: serif;
+            }
+            
+            header{
+                font-size: 80pt;
+                font-weight: 800;
+            }
+            
+            h3{
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                padding: 1%;
+            }
+            
+            h4{
+                border-bottom: 2px solid black;
+                padding: 3%;
+            }
+            
+            h5{
+                border-bottom: 2px solid black;
+                padding: 3%;
+            }
+            
+            .row{
+                text-align: center;
+            }
+            
+            .middleColumn{
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+            }
+            
+            form.searchForm input[type=text] {
+                padding: 10px;
+                font-size: 17px;
+                border: 1px solid grey;
+                float: left;
+                width: 80%;
+                background: #f1f1f1;
+                margin-top: 2%;
+                margin-bottom: 5%;
+            }
+
+            form.searchForm button {
+                float: left;
+                width: 20%;
+                padding: 10px;
+                background: #f1f1f1;
+                color: black;
+                font-size: 17px;
+                border: 1px solid grey;
+                border-left: none;
+                cursor: pointer;
+                margin-top: 2%;
+                margin-bottom: 5%;
+            }
+
+            form.searchForm button:hover {
+                background: #bbc1c0;
+            }
+            
+            p{
+                text-align: left;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <header>F.I.N.D.</header>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Fake Information & News Detector</h3>
+                </div>
+            </div>
+            <div id="columnHeaders" class="row">
+                <div class="col-sm-3">
+                    <h5>Fake News On The Rise</h5>
+                </div>
+                <div class="col-sm-6 middleColumn">
+                    <h4>Enter the Article You Want to Check</h4>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>Fake News is becoming a bigger and bigger issue in our media centered society. From extreme bias to complete satire, it is difficult for some to differentiate this from well thought out and accurate articles. We are striving to use make the issue as small as possible. Please try our fake news detector and see if it helps you out!</p>
+                </div>
+                <div class="col-sm-6 middleColumn">
+                    <form class="searchForm" action="https://find-219301.appspot.com/?url=" method="get">
+                        <input type="text" placeholder="example.com" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <h6>Insert the link to the article that you wish to test!</h6>
+
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <p>This API was created by Ian Naeger, Landen Eagan, Brian Robinson, and Cameron Warder for the TigerHacks competition at the University of Missouri in 2018. We are using machine learning technologies to attempt to find the validity of news articles that are presented. All rights reserved. Copywrite 2018.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
